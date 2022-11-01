@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/main.js"></script>
+  </head>
+
+  <body>
+    <main class="mainContainer">
+      <section class="loginContainer">
+        <div class="leftPage">
+          <img src="./assets/img/login_img.png" alt="login_img" />
+        </div>
+        <div class="rightPage">
+          <h2>Log In</h2>
+          <p class="acunt">
+            New User? <a href="#" class="acunt">Create an account</a>
+          </p>
+          <form class="formPage" action="" id="login">
+            <div class="inputs emailContainer">
+              <label for="email" id="email">Email Address</label>
+              <input
+                autocomplete="off"
+                type="email"
+                name="email"
+                id="contactEmail"
+                placeholder="example@gmail.com"
+                onkeyup="validateEmail()"
+                required
+              />
+              <small id="emailError"></small>
+            </div>
+            <div class="inputs pwdContainer">
+              <label for="password" id="password">Password</label>
+              <input
+                autocomplete="on"
+                type="password"
+                name="password"
+                id="pwd"
+                placeholder="Enter your password"
+                onkeyup="validatePassword()"
+                maxlength="8"
+                required
+              />
+              <small id="pwdError"></small>
+            </div>
+            <a class="forgotPwd" href="#">Forgot Password?</a>
+            <div class="btnContainer">
+              <button id="btn" onclick="event.preventDefault(); validateForm()">
+                LOGIN
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

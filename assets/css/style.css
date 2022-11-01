@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainContainer {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #2B4865;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(94, 144, 252);
+}
+
+p.acunt {
+  font-weight: 500;
+}
+
+label {
+  padding-bottom: 5px;
+  color: black;
+  font-weight: 500;
+}
+
+p,
+h2,
+.emailContainer,
+.pwdContainer {
+  margin-bottom: 10px;
+
+}
+
+
+.loginContainer {
+  display: flex;
+  height: fit-content;
+}
+
+.leftPage img {
+  max-width: 600px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rightPage {
+  background-color: white;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.rightPage h2 {
+  font-size: 2rem;
+}
+
+input#contactEmail,
+input#pwd {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  color: gray;
+ 
+}
+
+
+.inputs input {
+  border: 2px solid lightgray;
+  padding: 10px 10px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.formPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgotPwd {
+  font-weight: 500;
+  align-self: flex-end;
+  font-size: 14px;
+}
+
+
+
+
+
+#btn {
+  background-color: #90f887;
+  color: black;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  margin-top: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+}
+
+#emailError,
+#pwdError {
+  color: crimson;
+  margin-top: 5px;
+}
+
+.pwdMsg {
+  font-size: 10px;
+  margin-top: 2px;
+  text-align: justify;
+}
+
+small {
+  font-size: 11px;
+}
+
+small#pwdError {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 767px) {
+  .mainContainer {
+    height: 100%;
+  }
+
+  .loginContainer {
+    flex-direction: column;
+  }
+
+  .leftPage img {
+    width: 100%;
+  }
+
+  .rightPage {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  .loginContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .leftPage img {
+    width: 400px;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .rightPage {
+    width: auto;
+  }
+}
